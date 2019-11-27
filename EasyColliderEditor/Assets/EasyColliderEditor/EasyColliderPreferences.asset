@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d39440a36c2c454085cfae10f30b7b9, type: 3}
+  m_Name: EasyColliderPreferences
+  m_EditorClassIdentifier: 
+  _hoverColliderColour: {r: 0, g: 0, b: 0, a: 1}
+  _selectedColliderColour: {r: 1, g: 0, b: 0, a: 1}
+  _colliderSelectKeyCode: 257
+  _vertSelectKeyCode: 256
+  _displayVerticesScaling: 0.1
+  _displayVerticesColour: {r: 0, g: 0, b: 1, a: 1}
+  _hoverVertScaling: 0.15
+  _hoverVertColour: {r: 0, g: 1, b: 1, a: 1}
+  _selectedVertScaling: 0.2
+  _selectedVertCol: {r: 0, g: 1, b: 0, a: 1}
+  _overlapSelectedVertScale: 0.175
+  _overlapSelectedVertColour: {r: 1, g: 0, b: 0, a: 1}
