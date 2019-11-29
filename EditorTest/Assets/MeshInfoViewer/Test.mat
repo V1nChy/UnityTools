@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Test
   m_Shader: {fileID: 4800000, guid: 6245cd652c9cdcb458f2f80cffef7880, type: 3}
-  m_ShaderKeywords: _MESHINFO_WORLDNORMAL
+  m_ShaderKeywords: _MESHINFO_UV0
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -62,7 +62,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _MeshInfo: 4
+    - _MeshInfo: 0
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
