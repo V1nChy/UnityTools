@@ -7,7 +7,9 @@ using UnityEngine;
 [CustomEditor(typeof(ParticleEffectScript))] 
 public class MyParticleEffectUI : Editor {
 
-    string[] m_Label = new string[20];
+    private string[] m_Label = new string[20];
+
+    private Rect _windowSize = new Rect(8, 24, 300, 100);
 
     void OnSceneGUI()
     {
@@ -24,28 +26,18 @@ public class MyParticleEffectUI : Editor {
             m_Label[5] = GetParticleEffectData.GetPixRateStr(particleEffectScript);
         }
 
-        ShowUI(); 
+        GUILayout.Window(1, _windowSize, ShowUI, "Params Window");
     }
 
-    void ShowUI()
+    void ShowUI(int id)
     {
-        //开始绘制GUI
-        Handles.BeginGUI();
-
-        //规定GUI显示区域
-        GUILayout.BeginArea(new Rect(10, 10, 300, 300));
-
         for (int i = 0; i < m_Label.Length; i++)
-		{
+        {
             if (!string.IsNullOrEmpty(m_Label[i]))
-	        {
-		        GUILayout.Label(m_Label[i]);
-	        }
-		}
-
-        GUILayout.EndArea();
-
-        Handles.EndGUI();
+            {
+                EditorGUILayout.LabelField(m_Label[i]);
+            }
+        }
     }
 
     public override void OnInspectorGUI()
